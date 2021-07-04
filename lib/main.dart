@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //todo ホーム画面のタイトル変更
 //todo リストを表示
 //todo リスト間に区切りを表示
-//todo リスト表示を同的に
+//todo リスト表示を動的に
 //todo フロートアクションボタンをタップ時に、リストを一つ追加表示
 //todo 新しい画面を作成し、リストをタップした時に遷移
 //todo 新しい画面のレイアウト作成
