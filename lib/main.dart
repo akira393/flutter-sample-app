@@ -48,14 +48,17 @@ class _MyHomePageState extends State<MyHomePage> {
             leading: Icon(Icons.vpn_key),
             title: Text("amazon"),
           ),
+          Divider(),
           ListTile(
             leading: Icon(Icons.vpn_key),
             title: Text("楽天"),
           ),
+          Divider(),
           ListTile(
-            leading: Icon(Icons.vpn_key),
+            leading: Icon(Icons.lock ),
             title: Text("yahool"),
-          )
+          ),
+          Divider()
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -67,7 +70,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-//todo リスト間に区切りを表示
 //todo リスト表示を動的に
 //todo フロートアクションボタンをタップ時に、リストを一つ追加表示
 //todo 新しい画面を作成し、リストをタップした時に遷移
