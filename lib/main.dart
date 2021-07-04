@@ -42,19 +42,21 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
+      body: ListView(
+        children: [
+          ListTile(
+            leading: Icon(Icons.vpn_key),
+            title: Text("amazon"),
+          ),
+          ListTile(
+            leading: Icon(Icons.vpn_key),
+            title: Text("楽天"),
+          ),
+          ListTile(
+            leading: Icon(Icons.vpn_key),
+            title: Text("yahool"),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
@@ -65,7 +67,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-//todo リストを表示
 //todo リスト間に区切りを表示
 //todo リスト表示を動的に
 //todo フロートアクションボタンをタップ時に、リストを一つ追加表示
