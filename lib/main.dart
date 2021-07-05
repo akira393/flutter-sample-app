@@ -75,5 +75,4 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-//todo 新しい画面のレイアウト作成
 //todo 新しい画面にリストからデータを引き継ぐ
