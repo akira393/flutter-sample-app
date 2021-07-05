@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               ListTile(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PassItem()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PassItem(titleList[i])));
                 },
                 leading: Icon(Icons.vpn_key),
                 title: Text(titleList[i]),
@@ -74,5 +74,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-//todo 新しい画面にリストからデータを引き継ぐ
