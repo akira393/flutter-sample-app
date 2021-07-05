@@ -57,7 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
           );
         }),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: (){
+          titleList.add("google");
+          //buildメソッドをサイレンダーする関数？
+          setState(() {
+            
+          });
+        },
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
@@ -65,7 +71,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-//todo フロートアクションボタンをタップ時に、リストを一つ追加表示
 //todo 新しい画面を作成し、リストをタップした時に遷移
 //todo 新しい画面のレイアウト作成
 //todo 新しい画面にリストからデータを引き継ぐ
