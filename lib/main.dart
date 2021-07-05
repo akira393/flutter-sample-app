@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/passItem.dart';
 
 void main() {
   runApp(MyApp());
@@ -49,6 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
           return Column(
             children: [
               ListTile(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PassItem()));
+                },
                 leading: Icon(Icons.vpn_key),
                 title: Text(titleList[i]),
               ),
@@ -71,6 +75,5 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-//todo 新しい画面を作成し、リストをタップした時に遷移
 //todo 新しい画面のレイアウト作成
 //todo 新しい画面にリストからデータを引き継ぐ
